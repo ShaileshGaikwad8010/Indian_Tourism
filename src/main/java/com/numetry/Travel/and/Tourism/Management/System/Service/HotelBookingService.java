@@ -48,7 +48,7 @@ public class HotelBookingService {
 			hotelBooking.setBookingDate(new Date());
 			hotelBooking.setStatus("BOOKED");
             hotelBooking.setBookForDays(bookForDays);
-			double price=hotel.getprice();
+			double price=hotel.getPrice();
 			hotelBooking.setBookingPrice(price*bookForDays);
 			hotelBooking.setPaymentStatus("PENDING");
 			List<HotelBooking> bookings = user.getHotelBookings();
